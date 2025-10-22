@@ -1,0 +1,89 @@
+
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    /* Sets default font-size to 16px, ensuring 1em = 16px; */
+    font-size: 16px;
+    background-image: url('tiedye.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+     background-attachment: fixed
+}
+
+img{
+    width:100%
+}
+
+h1{
+    text-align: center;
+}
+
+.heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+
+img{
+    max-width: 1000px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.container{
+    display: inline-block;
+    max-width: 800px;
+}
+
+.icon img{
+    display: inline-block;
+    width: 300px;
+    float: left;
+    clear: left;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.headline{
+    text-align: center;
+}
+
+.lead-photo {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
+.story{
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.solo{
+    clear: both;
+}
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
